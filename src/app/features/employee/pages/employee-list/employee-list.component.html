@@ -1,1 +1,5 @@
-<p>employee-list works!</p>
+<div class="row g-3">
+  <div class="col-md-4" *ngFor="let emp of employees">
+    <app-employee-card [employee]="emp"></app-employee-card>
+  </div>
+</div>
